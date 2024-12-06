@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog | Donation Bangladesh</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="sticky top-0">
+      <!-- navbar -->
+      <nav class="bg-[#F9F7F3] p-4 md:p-0">
+        <div class="md:hidden mb-4">
+          <div class="flex items-center gap-3">
+            <img class="w-8" src="./assets/logo.png" alt="" />
+            <h2 class="font-bold">Donate Bangladesh</h2>
+          </div>
+        </div>
+        <div
+          class="flex justify-between items-center max-w-7xl mx-auto md:pt-4 md:pb-8"
+        >
+          <div>
+            <button
+              id="btn-home"
+              class="bg-[#B4F461] px-4 md:px-8 py-2 md:py-3 rounded-lg text-black font-bold"
+            >
+              Home
+            </button>
+          </div>
+          <div class="hidden md:flex justify-between items-center gap-4">
+            <img src="./assets/logo.png" alt="" />
+            <h2 class="text-xl font-bold">Donate Bangladesh</h2>
+          </div>
+          <div class="flex justify-between items-center gap-2">
+            <img src="./assets/coin.png" alt="" />
+            <p class="font-semibold text-[#111111B3]">
+              <span id="main-balance">5500</span> BDT
+            </p>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="max-w-7xl mx-auto p-4 md:p-0">
+      <h1 class="text-2xl md:text-4xl font-bold md:mt-12 mb-6">Important FAQ</h1>
+      <div class="join join-vertical w-full">
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" checked="checked" />
+          <div class="collapse-title text-xl font-medium">
+            What is the Document Object Model (DOM)?
+          </div>
+          <div class="collapse-content">
+            <p>hello</p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" />
+          <div class="collapse-title text-xl font-medium">
+            How do you select an element from the DOM?
+          </div>
+          <div class="collapse-content">
+            <p>hello</p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" />
+          <div class="collapse-title text-xl font-medium">
+            What is event delegation in the context of the DOM, and why is it
+            useful?
+          </div>
+          <div class="collapse-content">
+            <p>hello</p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" />
+          <div class="collapse-title text-xl font-medium">
+            How do you manipulate an element's attribute and styles using the
+            DOM?
+          </div>
+          <div class="collapse-content">
+            <p>hello</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      document
+        .getElementById("btn-home")
+        .addEventListener("click", function () {
+          window.location.href = "/layout.html";
+          console.log("connecet");
+        });
+    </script>
+  </body>
+</html>
