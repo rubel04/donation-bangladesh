@@ -68,7 +68,6 @@ document
       const donationHistoryContainer =
         document.getElementById("donation-history");
       const feniTitle = document.getElementById("feni-title").innerText;
-      console.log(feniTitle);
       const div = document.createElement("div");
       div.innerHTML = `
             <div class="border border-gray-200 rounded-lg p-4 space-y-2">
