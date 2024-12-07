@@ -11,11 +11,11 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:wght@100..900&display=swap');
-        .lexend-font {
+      @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:wght@100..900&display=swap");
+      .lexend-font {
         font-family: "Lexend", sans-serif;
       }
-   </style>
+    </style>
   </head>
   <body class="lexend-font">
     <header class="sticky top-0">
@@ -31,12 +31,14 @@
           class="flex justify-between items-center max-w-7xl mx-auto md:pt-4 md:pb-8"
         >
           <div>
-            <button
-              id="btn-home"
-              class="bg-[#B4F461] px-4 md:px-8 py-2 md:py-3 rounded-lg text-black font-bold"
-            >
-              Home
-            </button>
+            <a href="./index.html">
+              <button
+                id="btn-home"
+                class="bg-[#B4F461] px-4 md:px-8 py-2 md:py-3 rounded-lg text-black font-bold"
+              >
+                Home
+              </button>
+            </a>
           </div>
           <div class="hidden md:flex justify-between items-center gap-4">
             <img src="./assets/logo.png" alt="" />
@@ -52,7 +54,9 @@
       </nav>
     </header>
     <main class="max-w-7xl mx-auto p-4 md:p-0">
-      <h1 class="text-2xl md:text-4xl font-bold md:mt-12 mb-6">Important FAQ</h1>
+      <h1 class="text-2xl md:text-4xl font-bold md:mt-12 mb-6">
+        Important FAQ
+      </h1>
       <div class="join join-vertical w-full">
         <div class="collapse collapse-arrow join-item border-base-300 border">
           <input type="radio" name="my-accordion-4" checked="checked" />
@@ -60,7 +64,7 @@
             What is the Document Object Model (DOM)?
           </div>
           <div class="collapse-content">
-            <p>hello</p>
+            <p class="text-[#111111B3]">The Document Object Model (DOM) is a programming interface that represents a web page's structure as a tree of objects. It allows developers to access, manipulate, and update the content, structure, and styles of a web page dynamically using JavaScript. Essentially, the DOM bridges the HTML/CSS of a web page and JavaScript for interactive functionality.</p>
           </div>
         </div>
         <div class="collapse collapse-arrow join-item border-base-300 border">
@@ -69,7 +73,14 @@
             How do you select an element from the DOM?
           </div>
           <div class="collapse-content">
-            <p>hello</p>
+            <p class="text-lg">There are many ways to select elements from the DOM. Such as,</p>
+            <ul class="text-[#111111B3]">
+              <li>document.getElementById('id')</li>
+              <li>document.querySelector('selector')</li>
+              <li>document.querySelectorAll('selector')</li>
+              <li>document.getElementsByClassName('class')</li>
+              <li>document.getElementsByTagName('tagName')</li>
+            </ul>
           </div>
         </div>
         <div class="collapse collapse-arrow join-item border-base-300 border">
@@ -79,7 +90,7 @@
             useful?
           </div>
           <div class="collapse-content">
-            <p>hello</p>
+            <p class="text-[#111111B3]">Event delegation is a technique in the DOM where a single event listener is added to a parent element to handle events for its child elements. Instead of attaching listeners to each child, the parent catches the event as it bubbles up. This is useful because it improves performance, reduces memory usage, and simplifies code for dynamically added elements. Event delegation relies on event propagation (bubbling phase) in the DOM. For example, managing clicks on a list of items can be handled by one listener on the parent ul instead of individual listeners on each li.</p>
           </div>
         </div>
         <div class="collapse collapse-arrow join-item border-base-300 border">
@@ -89,18 +100,10 @@
             DOM?
           </div>
           <div class="collapse-content">
-            <p>hello</p>
+            <p class="text-[#111111B3]">To manipulate attributes, use methods like setAttribute(), getAttribute(), and removeAttribute(). For styles, use element.style.propertyName = 'value' to change inline styles or classList.add(), remove(), and toggle() for CSS classes. These methods dynamically update the content and appearance of elements in the DOM.</p>
           </div>
         </div>
       </div>
     </main>
-    <script>
-      document
-        .getElementById("btn-home")
-        .addEventListener("click", function () {
-          window.location.href = "/index.html";
-          console.log("connecet");
-        });
-    </script>
   </body>
 </html>

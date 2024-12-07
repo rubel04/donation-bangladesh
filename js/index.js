@@ -8,7 +8,7 @@ function textValueById(textId) {
   return textValue;
 }
 
-// noakhali donation
+// noakhali donation function
 document
   .getElementById("btn-donate-noakhali")
   .addEventListener("click", function () {
@@ -27,7 +27,7 @@ document
         newNoakhaliBalance;
       const newMainBalance = mainBalance - noakhalidonationAmount;
       document.getElementById("main-balance").innerText = newMainBalance;
-      // history
+      // history section
       const date = new Date();
       const donationHistoryContainer =
         document.getElementById("donation-history");
@@ -41,11 +41,11 @@ document
         `;
       donationHistoryContainer.appendChild(div);
     } else {
-      alert("Your Donation Failed");
+      alert("Your Donation Process Failed");
     }
   });
 
-// feni donation
+// feni donation function
 document
   .getElementById("btn-donate-feni")
   .addEventListener("click", function () {
@@ -63,7 +63,7 @@ document
       document.getElementById("feni-balance").innerText = newFeniBalance;
       const newMainBalance = mainBalance - feniDonationAmount;
       document.getElementById("main-balance").innerText = newMainBalance;
-      // history
+      // history section
       const date = new Date();
       const donationHistoryContainer =
         document.getElementById("donation-history");
@@ -77,7 +77,7 @@ document
         `;
       donationHistoryContainer.appendChild(div);
     } else {
-      alert("Your Donation Failed");
+      alert("Your Donation Process Failed");
     }
   });
 
@@ -117,21 +117,19 @@ document
     }
   });
 
-//   toggle button
+//   toggle button and active color
 document.getElementById("btn-history").addEventListener("click", function () {
   document.getElementById("donation-section").classList.add("hidden");
   document.getElementById("donation-history").classList.remove("hidden");
+
+  document.getElementById("btn-history").classList.add("bg-[#B4F461]");
+  document.getElementById("btn-donation").classList.remove("bg-[#B4F461]");
 });
 
 document.getElementById("btn-donation").addEventListener("click", function () {
   document.getElementById("donation-section").classList.remove("hidden");
   document.getElementById("donation-history").classList.add("hidden");
+
+  document.getElementById("btn-history").classList.remove("bg-[#B4F461]");
+  document.getElementById("btn-donation").classList.add("bg-[#B4F461]");
 });
-
-// blog page redirect
-// document.getElementById("btn-blog").addEventListener('click', function () {
-//   window.location.href = '/blog.html'
-// })
-
-
-
