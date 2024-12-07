@@ -129,9 +129,9 @@ document.getElementById("btn-donation").addEventListener("click", function () {
 });
 
 // blog page redirect
-document.getElementById("btn-blog").addEventListener('click', function () {
-  window.location.href = '/blog.html'
-})
+// document.getElementById("btn-blog").addEventListener('click', function () {
+//   window.location.href = '/blog.html'
+// })
 
 
 
