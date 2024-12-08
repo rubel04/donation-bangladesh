@@ -20,7 +20,7 @@ document
     if (
       mainBalance > noakhalidonationAmount &&
       !isNaN(noakhalidonationAmount) &&
-      noakhalidonationAmount > 0
+      noakhalidonationAmount > 0 
     ) {
       const newNoakhaliBalance = noakhaliBalance + noakhalidonationAmount;
       document.getElementById("noakhali-balance").innerText =
@@ -40,6 +40,8 @@ document
             </div>
         `;
       donationHistoryContainer.appendChild(div);
+      // show modal 
+      my_modal_1.showModal();
     } else {
       alert("Your Donation Process Failed");
     }
@@ -76,6 +78,8 @@ document
             </div>
         `;
       donationHistoryContainer.appendChild(div);
+      // show modal
+      my_modal_1.showModal();
     } else {
       alert("Your Donation Process Failed");
     }
@@ -112,6 +116,8 @@ document
             </div>
         `;
       donationHistoryContainer.appendChild(div);
+      // show modal
+      my_modal_1.showModal();
     } else {
       alert("Your Donation Failed");
     }
