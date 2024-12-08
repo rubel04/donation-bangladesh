@@ -20,7 +20,8 @@ document
     if (
       mainBalance > noakhalidonationAmount &&
       !isNaN(noakhalidonationAmount) &&
-      noakhalidonationAmount > 0 
+      noakhalidonationAmount > 0 &&
+      !Number.isInteger(Number(noakhalidonationAmount))
     ) {
       const newNoakhaliBalance = noakhaliBalance + noakhalidonationAmount;
       document.getElementById("noakhali-balance").innerText =
@@ -40,7 +41,7 @@ document
             </div>
         `;
       donationHistoryContainer.appendChild(div);
-      // show modal 
+      // show modal
       my_modal_1.showModal();
     } else {
       alert("Your Donation Process Failed");
@@ -59,7 +60,8 @@ document
     if (
       mainBalance > feniDonationAmount &&
       !isNaN(feniDonationAmount) &&
-      feniDonationAmount > 0
+      feniDonationAmount > 0 &&
+      !Number.isInteger(Number(feniDonationAmount))
     ) {
       const newFeniBalance = feniBalance + feniDonationAmount;
       document.getElementById("feni-balance").innerText = newFeniBalance;
@@ -97,7 +99,8 @@ document
     if (
       mainBalance > quotaDonationAmount &&
       !isNaN(quotaDonationAmount) &&
-      quotaDonationAmount > 0
+      quotaDonationAmount > 0 &&
+      !Number.isInteger(Number(quotaDonationAmount))
     ) {
       const newQuotaBalance = quotaBalance + quotaDonationAmount;
       document.getElementById("quota-balance").innerText = newQuotaBalance;
