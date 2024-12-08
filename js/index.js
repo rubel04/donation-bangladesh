@@ -20,8 +20,7 @@ document
     if (
       mainBalance > noakhalidonationAmount &&
       !isNaN(noakhalidonationAmount) &&
-      noakhalidonationAmount > 0 &&
-      !Number.isInteger(Number(noakhalidonationAmount))
+      noakhalidonationAmount > 0
     ) {
       const newNoakhaliBalance = noakhaliBalance + noakhalidonationAmount;
       document.getElementById("noakhali-balance").innerText =
@@ -60,8 +59,7 @@ document
     if (
       mainBalance > feniDonationAmount &&
       !isNaN(feniDonationAmount) &&
-      feniDonationAmount > 0 &&
-      !Number.isInteger(Number(feniDonationAmount))
+      feniDonationAmount > 0
     ) {
       const newFeniBalance = feniBalance + feniDonationAmount;
       document.getElementById("feni-balance").innerText = newFeniBalance;
@@ -99,8 +97,7 @@ document
     if (
       mainBalance > quotaDonationAmount &&
       !isNaN(quotaDonationAmount) &&
-      quotaDonationAmount > 0 &&
-      !Number.isInteger(Number(quotaDonationAmount))
+      quotaDonationAmount > 0
     ) {
       const newQuotaBalance = quotaBalance + quotaDonationAmount;
       document.getElementById("quota-balance").innerText = newQuotaBalance;
